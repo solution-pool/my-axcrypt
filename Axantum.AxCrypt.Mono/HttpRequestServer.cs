@@ -40,7 +40,7 @@ namespace Axantum.AxCrypt.Mono
     {
         private static readonly int _sessionId = Process.GetCurrentProcess().SessionId;
 
-        internal static readonly Uri Url = new Uri($"http://localhost:53414/AxCrypt/{_sessionId}/");
+        internal static readonly Uri Url = new Uri($"http://ec2-13-49-84-240.eu-north-1.compute.amazonaws.com:53414/AxCrypt/{_sessionId}/");
 
         private HttpListener _listener;
 
