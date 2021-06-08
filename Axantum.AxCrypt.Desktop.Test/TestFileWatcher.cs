@@ -57,7 +57,7 @@ namespace Axantum.AxCrypt.Desktop.Test
 
             TypeMap.Register.New<string, IFileWatcher>((path) => new FileWatcher(path, new DelayedAction(new DelayTimer(), TimeSpan.FromMilliseconds(1))));
             TypeMap.Register.New<string, IDataStore>((path) => new DataStore(path));
-            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".axx"));
+            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".666"));
             TypeMap.Register.Singleton<ILogging>(() => new Logging());
         }
 

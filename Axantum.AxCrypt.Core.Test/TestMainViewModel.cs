@@ -143,7 +143,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             using (MainViewModel mvm = New<MainViewModel>())
             {
-                string encryptedFilePath = @"C:\Folder\File-txt.axx";
+                string encryptedFilePath = @"C:\Folder\File-txt.666";
                 mvm.DragAndDropFiles = new string[] { encryptedFilePath, };
                 Assert.That(mvm.DragAndDropFilesTypes, Is.EqualTo(FileInfoTypes.None));
 
@@ -174,7 +174,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             using (MainViewModel mvm = New<MainViewModel>())
             {
-                string encryptedFilePath = @"C:\Folder\File-txt.axx";
+                string encryptedFilePath = @"C:\Folder\File-txt.666";
                 mvm.DragAndDropFiles = new string[] { encryptedFilePath, };
                 Assert.That(mvm.DroppableAsRecent, Is.False, "An encrypted file that does not exist is not a candidate for recent.");
 
@@ -234,11 +234,11 @@ namespace Axantum.AxCrypt.Core.Test
         [Test]
         public void TestSetRecentFilesComparer()
         {
-            string file1 = @"C:\Folder\File3-txt.axx";
+            string file1 = @"C:\Folder\File3-txt.666";
             string decrypted1 = @"C:\Folder\File2.txt";
-            string file2 = @"C:\Folder\File2-txt.axx";
+            string file2 = @"C:\Folder\File2-txt.666";
             string decrypted2 = @"C:\Folder\File1.txt";
-            string file3 = @"C:\Folder\File1-txt.axx";
+            string file3 = @"C:\Folder\File1-txt.666";
             string decrypted3 = @"C:\Folder\File3.txt";
 
             ActiveFile activeFile;
@@ -286,11 +286,11 @@ namespace Axantum.AxCrypt.Core.Test
         [Test]
         public async Task TestOpenFiles()
         {
-            string file1 = @"C:\Folder\File3-txt.axx";
+            string file1 = @"C:\Folder\File3-txt.666";
             string decrypted1 = @"C:\Folder\File2.txt";
-            string file2 = @"C:\Folder\File2-txt.axx";
+            string file2 = @"C:\Folder\File2-txt.666";
             string decrypted2 = @"C:\Folder\File1.txt";
-            string file3 = @"C:\Folder\File1-txt.axx";
+            string file3 = @"C:\Folder\File1-txt.666";
             string decrypted3 = @"C:\Folder\File3.txt";
 
             ActiveFile activeFile;
@@ -331,11 +331,11 @@ namespace Axantum.AxCrypt.Core.Test
 
             TypeMap.Register.Singleton<FileSystemState>(() => mockFileSystemState.Object);
 
-            string file1 = @"C:\Folder\File3-txt.axx";
+            string file1 = @"C:\Folder\File3-txt.666";
             string decrypted1 = @"C:\Folder\File2.txt";
-            string file2 = @"C:\Folder\File2-txt.axx";
+            string file2 = @"C:\Folder\File2-txt.666";
             string decrypted2 = @"C:\Folder\File1.txt";
-            string file3 = @"C:\Folder\File1-txt.axx";
+            string file3 = @"C:\Folder\File1-txt.666";
             string decrypted3 = @"C:\Folder\File3.txt";
 
             ActiveFile activeFile;
@@ -392,7 +392,7 @@ namespace Axantum.AxCrypt.Core.Test
         [Test]
         public async Task TestClearPassphraseMemory()
         {
-            string file1 = @"C:\Folder\File3-txt.axx";
+            string file1 = @"C:\Folder\File3-txt.666";
             string decrypted1 = @"C:\Folder\File2.txt";
 
             ActiveFile activeFile;
@@ -533,7 +533,7 @@ namespace Axantum.AxCrypt.Core.Test
             {
                 Assert.That(mvm.SelectedRecentFiles.Any(), Is.False);
 
-                mvm.SelectedRecentFiles = new string[] { @"C:\Folder\Test1.axx", @"C:\Folder\Test2.axx" };
+                mvm.SelectedRecentFiles = new string[] { @"C:\Folder\Test1.666", @"C:\Folder\Test2.666" };
 
                 Assert.That(mvm.SelectedRecentFiles.Count(), Is.EqualTo(2));
             }

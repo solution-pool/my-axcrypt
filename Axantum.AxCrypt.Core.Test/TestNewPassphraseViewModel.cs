@@ -157,8 +157,8 @@ namespace Axantum.AxCrypt.Core.Test
         {
             SetupAssembly.AssemblySetupCrypto(cryptoImplementation);
 
-            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.axx", new MemoryStream(Resources.helloworld_key_a_txt));
-            NewPasswordViewModel npvm = new NewPasswordViewModel(String.Empty, @"C:\My Folder\MyFile-txt.axx");
+            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.666", new MemoryStream(Resources.helloworld_key_a_txt));
+            NewPasswordViewModel npvm = new NewPasswordViewModel(String.Empty, @"C:\My Folder\MyFile-txt.666");
             npvm.PasswordText = "b";
             npvm.Verification = "b";
 

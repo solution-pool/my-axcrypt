@@ -844,7 +844,7 @@ Przykro nam, że rozstajesz się z nami i mamy nadzieję, że byłeś zadowolony
     <value>Wymagane hasło</value>
   </data>
   <data name="DialogExportAxCryptIdFileName" xml:space="preserve">
-    <value>AxCrypt ID (#{1}) - {0}.axx</value>
+    <value>AxCrypt ID (#{1}) - {0}.666</value>
   </data>
   <data name="DialogExportAxCryptIdTitle" xml:space="preserve">
     <value>Eksportuj AxCrypt ID</value>
@@ -1023,8 +1023,8 @@ Przykro nam, że rozstajesz się z nami i mamy nadzieję, że byłeś zadowolony
     <value>Plik '{0}' już istnieje.</value>
   </data>
   <data name="FileAssociationBrokenWarning" xml:space="preserve">
-    <value>Dwukrotne kliknięcie, aby otworzyć pliki AxCrypt poza AxCrypt może nie działać prawidłowo. Skojarzenia plików w systemie operacyjnym dla rozszerzenia ".axx" wydają się być uszkodzone. Skontaktuj się z działem IT lub poszukaj rozwiązania w Internecie.</value>
-    <comment>A text that is shown to users starting the association with .axx file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
+    <value>Dwukrotne kliknięcie, aby otworzyć pliki AxCrypt poza AxCrypt może nie działać prawidłowo. Skojarzenia plików w systemie operacyjnym dla rozszerzenia ".666" wydają się być uszkodzone. Skontaktuj się z działem IT lub poszukaj rozwiązania w Internecie.</value>
+    <comment>A text that is shown to users starting the association with .666 file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
   </data>
   <data name="FileDoesNotExist" xml:space="preserve">
     <value>Plik '{0}' nie istnieje.</value>
@@ -1039,7 +1039,7 @@ Przykro nam, że rozstajesz się z nami i mamy nadzieję, że byłeś zadowolony
   </data>
   <data name="FileFilterFileTypeAxCryptIdFiles" xml:space="preserve">
     <value>Pliki AxCrypt ID</value>
-    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .axx files.</comment>
+    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .666 files.</comment>
   </data>
   <data name="FileFilterFileTypeFiles" xml:space="preserve">
     <value>Pliki</value>

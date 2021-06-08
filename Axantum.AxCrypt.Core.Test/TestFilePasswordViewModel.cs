@@ -163,8 +163,8 @@ namespace Axantum.AxCrypt.Core.Test
         {
             _identities.Add(new Passphrase("a"));
 
-            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.axx", new MemoryStream(Resources.helloworld_key_a_txt));
-            FilePasswordViewModel npvm = new FilePasswordViewModel(@"C:\My Folder\MyFile-txt.axx");
+            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.666", new MemoryStream(Resources.helloworld_key_a_txt));
+            FilePasswordViewModel npvm = new FilePasswordViewModel(@"C:\My Folder\MyFile-txt.666");
             npvm.PasswordText = "b";
 
             Assert.That(npvm[nameof(FilePasswordViewModel.PasswordText)], Is.Not.EqualTo(""));
@@ -176,8 +176,8 @@ namespace Axantum.AxCrypt.Core.Test
         {
             _identities.Add(new Passphrase("a"));
 
-            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.axx", new MemoryStream(Resources.helloworld_key_a_txt));
-            FilePasswordViewModel npvm = new FilePasswordViewModel(@"C:\My Folder\MyFile-txt.axx");
+            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.666", new MemoryStream(Resources.helloworld_key_a_txt));
+            FilePasswordViewModel npvm = new FilePasswordViewModel(@"C:\My Folder\MyFile-txt.666");
             npvm.PasswordText = "a";
 
             Assert.That(npvm[nameof(FilePasswordViewModel.PasswordText)], Is.EqualTo(""));
@@ -189,8 +189,8 @@ namespace Axantum.AxCrypt.Core.Test
         {
             _identities.Add(new Passphrase("b"));
 
-            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.axx", new MemoryStream(Resources.helloworld_key_a_txt));
-            FilePasswordViewModel npvm = new FilePasswordViewModel(@"C:\My Folder\MyFile-txt.axx");
+            FakeDataStore.AddFile(@"C:\My Folder\MyFile-txt.666", new MemoryStream(Resources.helloworld_key_a_txt));
+            FilePasswordViewModel npvm = new FilePasswordViewModel(@"C:\My Folder\MyFile-txt.666");
             npvm.PasswordText = "b";
 
             Assert.That(npvm[nameof(FilePasswordViewModel.PasswordText)], Is.Not.EqualTo(String.Empty));

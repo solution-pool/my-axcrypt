@@ -41,7 +41,7 @@ namespace Axantum.AxCrypt.Mono.Test
         [SetUp]
         public static void Setup()
         {
-            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".axx"));
+            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".666"));
             TypeMap.Register.Singleton<ILogging>(() => new Logging());
         }
 

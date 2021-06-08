@@ -332,7 +332,8 @@ namespace Axantum.AxCrypt
             this._recentFilesTabPage.Padding = new System.Windows.Forms.Padding(3);
             this._recentFilesTabPage.Size = new System.Drawing.Size(650, 150);
             this._recentFilesTabPage.TabIndex = 2;
-            this._recentFilesTabPage.Text = "[Recent Files]";
+            // this._recentFilesTabPage.Text = "[Recent Files]";
+            this._recentFilesTabPage.Text = "[Encrypted & Decrypted Files]";
             this._recentFilesTabPage.UseVisualStyleBackColor = true;
             // 
             // _recentFilesListView
@@ -852,7 +853,7 @@ namespace Axantum.AxCrypt
             // 
             // _cleanDecryptedToolStripMenuItem
             // 
-            this._cleanDecryptedToolStripMenuItem.Image = global::Axantum.AxCrypt.Properties.Resources.clean_broom_red;
+            // this._cleanDecryptedToolStripMenuItem.Image = global::Axantum.AxCrypt.Properties.Resources.clean_broom_red;
             this._cleanDecryptedToolStripMenuItem.Name = "_cleanDecryptedToolStripMenuItem";
             this._cleanDecryptedToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this._cleanDecryptedToolStripMenuItem.Text = "[&Clean Decrypted]";
@@ -1013,7 +1014,7 @@ namespace Axantum.AxCrypt
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.Image = global::Axantum.AxCrypt.Properties.Resources.logo_text_retina;
+            // this.pictureBox1.Image = global::Axantum.AxCrypt.Properties.Resources.logo_text_retina;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(15, 3);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -1077,7 +1078,7 @@ namespace Axantum.AxCrypt
             // 
             this._keyShareToolStripButton.AutoSize = false;
             this._keyShareToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._keyShareToolStripButton.Image = global::Axantum.AxCrypt.Properties.Resources.share_border_80px;
+            // this._keyShareToolStripButton.Image = global::Axantum.AxCrypt.Properties.Resources.share_border_80px;
             this._keyShareToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._keyShareToolStripButton.Margin = new System.Windows.Forms.Padding(0);
             this._keyShareToolStripButton.Name = "_keyShareToolStripButton";
@@ -1088,7 +1089,7 @@ namespace Axantum.AxCrypt
             // 
             this._secretsToolStripButton.AutoSize = false;
             this._secretsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._secretsToolStripButton.Image = global::Axantum.AxCrypt.Properties.Resources.passwords_80px;
+            // this._secretsToolStripButton.Image = global::Axantum.AxCrypt.Properties.Resources.passwords_80px;
             this._secretsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._secretsToolStripButton.Margin = new System.Windows.Forms.Padding(0);
             this._secretsToolStripButton.Name = "_secretsToolStripButton";
@@ -1112,7 +1113,7 @@ namespace Axantum.AxCrypt
             this._closeAndRemoveOpenFilesToolStripButton.AutoSize = false;
             this._closeAndRemoveOpenFilesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this._closeAndRemoveOpenFilesToolStripButton.Enabled = false;
-            this._closeAndRemoveOpenFilesToolStripButton.Image = global::Axantum.AxCrypt.Properties.Resources.broom_red_40px;
+            // this._closeAndRemoveOpenFilesToolStripButton.Image = global::Axantum.AxCrypt.Properties.Resources.broom_red_40px;
             this._closeAndRemoveOpenFilesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._closeAndRemoveOpenFilesToolStripButton.Margin = new System.Windows.Forms.Padding(0);
             this._closeAndRemoveOpenFilesToolStripButton.Name = "_closeAndRemoveOpenFilesToolStripButton";
@@ -1161,7 +1162,7 @@ namespace Axantum.AxCrypt
             // 
             this._feedbackButton.AutoSize = false;
             this._feedbackButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._feedbackButton.Image = global::Axantum.AxCrypt.Properties.Resources.feedback_40px;
+            // this._feedbackButton.Image = global::Axantum.AxCrypt.Properties.Resources.feedback_40px;
             this._feedbackButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._feedbackButton.Margin = new System.Windows.Forms.Padding(0);
             this._feedbackButton.Name = "_feedbackButton";
@@ -1172,7 +1173,7 @@ namespace Axantum.AxCrypt
             // 
             this._softwareStatusButton.AutoSize = false;
             this._softwareStatusButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this._softwareStatusButton.Image = global::Axantum.AxCrypt.Properties.Resources.bulb_green_40px;
+            // this._softwareStatusButton.Image = global::Axantum.AxCrypt.Properties.Resources.bulb_green_40px;
             this._softwareStatusButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this._softwareStatusButton.ImageTransparentColor = System.Drawing.Color.White;
             this._softwareStatusButton.Margin = new System.Windows.Forms.Padding(0);

@@ -859,7 +859,7 @@ Yollarımızın ayrılmasına üzülsek de AxCrypt'teki vaktinden keyif aldığ�
     <value>Şifre gerekli</value>
   </data>
   <data name="DialogExportAxCryptIdFileName" xml:space="preserve">
-    <value>AxCrypt kimliği (#{1}) - {0}.axx</value>
+    <value>AxCrypt kimliği (#{1}) - {0}.666</value>
   </data>
   <data name="DialogExportAxCryptIdTitle" xml:space="preserve">
     <value>AxCrypt kimliğini yolla</value>
@@ -1046,8 +1046,8 @@ Yollarımızın ayrılmasına üzülsek de AxCrypt'teki vaktinden keyif aldığ�
     <value>Dosya '{0}' zaten mevcut.</value>
   </data>
   <data name="FileAssociationBrokenWarning" xml:space="preserve">
-    <value>AxCrypt dosyalarını AxCrypt dışında açmak için çift tıklama özelliği doğru biçimde işlemeyebilir. ".axx" uzantısı için işletim sistemi dosya ilişkilendirmesi  arızalıdır. Bİ destek biriminizle iletişime geç ya da internette bir çözüm ara.  </value>
-    <comment>A text that is shown to users starting the association with .axx file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
+    <value>AxCrypt dosyalarını AxCrypt dışında açmak için çift tıklama özelliği doğru biçimde işlemeyebilir. ".666" uzantısı için işletim sistemi dosya ilişkilendirmesi  arızalıdır. Bİ destek biriminizle iletişime geç ya da internette bir çözüm ara.  </value>
+    <comment>A text that is shown to users starting the association with .666 file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
   </data>
   <data name="FileDoesNotExist" xml:space="preserve">
     <value>'{0}' adlı bir dosya yok.</value>
@@ -1062,7 +1062,7 @@ Yollarımızın ayrılmasına üzülsek de AxCrypt'teki vaktinden keyif aldığ�
   </data>
   <data name="FileFilterFileTypeAxCryptIdFiles" xml:space="preserve">
     <value>AxCrypt Kimliği Dosyaları</value>
-    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .axx files.</comment>
+    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .666 files.</comment>
   </data>
   <data name="FileFilterFileTypeFiles" xml:space="preserve">
     <value>Dosyalar</value>

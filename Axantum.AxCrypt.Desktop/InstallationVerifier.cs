@@ -44,7 +44,7 @@ namespace Axantum.AxCrypt.Desktop
         public bool IsLavasoftApplicationInstalled => _isLavasoftApplicationInstalled.Value;
 
         /// <summary>
-        /// Using AssocQueryString in shlwapi.dll determine if the .axx file association is correct.
+        /// Using AssocQueryString in shlwapi.dll determine if the .666 file association is correct.
         ///
         /// (Another possibility is to check the file association for user selection if any under
         /// Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Roaming\OpenWith\FileExts)
@@ -60,7 +60,7 @@ namespace Axantum.AxCrypt.Desktop
                 NativeMethods.ASSOCSTR.ASSOCSTR_EXECUTABLE, New<IRuntimeEnvironment>().AxCryptExtension, null, pszOut, ref pcchOut);
 
             string associatedProgramFilePath = pszOut.ToString();
-            string axCryptProgramFilePath = Path.Combine(Environment.GetEnvironmentVariable("ProgramFiles"), "AxCrypt", "AxCrypt", "AxCrypt.exe");
+            string axCryptProgramFilePath = Path.Combine(Environment.GetEnvironmentVariable("ProgramFiles"), "666encryption", "666encryption", "666encryption.exe");
             return String.Equals(axCryptProgramFilePath, associatedProgramFilePath, StringComparison.OrdinalIgnoreCase);
         }
 

@@ -43,7 +43,7 @@ namespace Axantum.AxCrypt.Core.Test
             IRequestClient clientMock = Mock.Of<IRequestClient>(x => x.Dispatch(It.Is<CommandServiceEventArgs>(ca => ca.Verb == CommandVerb.Open)) == CommandStatus.Success);
 
             CommandService service = new CommandService(serverMock, clientMock);
-            CommandStatus status = service.Call(CommandVerb.Open, -1, @"C:\folder\file.axx");
+            CommandStatus status = service.Call(CommandVerb.Open, -1, @"C:\folder\file.666");
 
             Assert.That(status, Is.EqualTo(CommandStatus.Success), "The call should indicate success.");
         }

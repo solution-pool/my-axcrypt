@@ -70,8 +70,8 @@ namespace Axantum.AxCrypt.Core.Test
             _rootPath = Path.GetPathRoot(Environment.CurrentDirectory);
             _testTextPath = _rootPath.PathCombine("test.txt");
             _davidCopperfieldTxtPath = _rootPath.PathCombine("Users", "AxCrypt", "David Copperfield.txt");
-            _uncompressedAxxPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).PathCombine("Uncompressed.axx");
-            _helloWorldAxxPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).PathCombine("HelloWorld.axx");
+            _uncompressedAxxPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).PathCombine("Uncompressed.666");
+            _helloWorldAxxPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).PathCombine("HelloWorld.666");
 
             FakeDataStore.AddFile(_testTextPath, FakeDataStore.TestDate1Utc, FakeDataStore.TestDate2Utc, FakeDataStore.TestDate1Utc, FakeDataStore.ExpandableMemoryStream(Encoding.UTF8.GetBytes("This is a short file")));
             FakeDataStore.AddFile(_davidCopperfieldTxtPath, FakeDataStore.TestDate4Utc, FakeDataStore.TestDate5Utc, FakeDataStore.TestDate6Utc, FakeDataStore.ExpandableMemoryStream(Encoding.GetEncoding(1252).GetBytes(Resources.david_copperfield)));
@@ -199,7 +199,7 @@ namespace Axantum.AxCrypt.Core.Test
             ActiveFile activeFile;
             LogOnIdentity key = new LogOnIdentity("key");
 
-            activeFile = new ActiveFile(New<IDataStore>(@"C:\encrypted.axx"), New<IDataStore>(@"C:\decrypted.txt"), key, ActiveFileStatus.NotDecrypted, new V1Aes128CryptoFactory().CryptoId);
+            activeFile = new ActiveFile(New<IDataStore>(@"C:\encrypted.666"), New<IDataStore>(@"C:\decrypted.txt"), key, ActiveFileStatus.NotDecrypted, new V1Aes128CryptoFactory().CryptoId);
             Assert.That(activeFile.VisualState, Is.EqualTo(ActiveFileVisualStates.EncryptedWithKnownKey | ActiveFileVisualStates.LowEncryption));
 
             activeFile = new ActiveFile(activeFile);
@@ -227,7 +227,7 @@ namespace Axantum.AxCrypt.Core.Test
             ActiveFile activeFile;
             LogOnIdentity key = new LogOnIdentity("key");
 
-            activeFile = new ActiveFile(New<IDataStore>(@"C:\encrypted.axx"), New<IDataStore>(@"C:\decrypted.txt"), key, ActiveFileStatus.NotDecrypted, new V2Aes256CryptoFactory().CryptoId);
+            activeFile = new ActiveFile(New<IDataStore>(@"C:\encrypted.666"), New<IDataStore>(@"C:\decrypted.txt"), key, ActiveFileStatus.NotDecrypted, new V2Aes256CryptoFactory().CryptoId);
             Assert.That(activeFile.VisualState, Is.EqualTo(ActiveFileVisualStates.EncryptedWithKnownKey));
 
             activeFile = new ActiveFile(activeFile);

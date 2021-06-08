@@ -46,7 +46,7 @@ namespace Axantum.AxCrypt.Mono
     {
         public static void RegisterTypeFactories()
         {
-            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".axx"));
+            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".666"));
             TypeMap.Register.Singleton<IPortableFactory>(() => new PortableFactory());
             TypeMap.Register.Singleton<ILogging>(() => new Logging());
             TypeMap.Register.Singleton<CommandService>(() => new CommandService(new HttpRequestServer(), new HttpRequestClient()));

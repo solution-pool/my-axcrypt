@@ -20,7 +20,7 @@ namespace AxCrypt.Content.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -2250,7 +2250,7 @@ namespace AxCrypt.Content.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AxCrypt ID (#{1}) - {0}.axx.
+        ///   Looks up a localized string similar to AxCrypt ID (#{1}) - {0}.666.
         /// </summary>
         public static string DialogExportAxCryptIdFileName {
             get {
@@ -2835,7 +2835,7 @@ namespace AxCrypt.Content.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Double-click to open AxCrypt files outside of AxCrypt may not function correctly. The operating system file association for extension &quot;.axx&quot; appears to be broken. Contact your IT support  or search for a solution on the Internet..
+        ///   Looks up a localized string similar to Double-click to open AxCrypt files outside of AxCrypt may not function correctly. The operating system file association for extension &quot;.666&quot; appears to be broken. Contact your IT support  or search for a solution on the Internet..
         /// </summary>
         public static string FileAssociationBrokenWarning {
             get {
@@ -2871,7 +2871,7 @@ namespace AxCrypt.Content.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AxCrypt Files.
+        ///   Looks up a localized string similar to 666encryption Files.
         /// </summary>
         public static string FileFilterFileTypeAxCryptFiles {
             get {
@@ -6005,7 +6005,7 @@ namespace AxCrypt.Content.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Recent Files.
+        ///   Looks up a localized string similar to Encrypted | Decrypted Files.
         /// </summary>
         public static string RecentFilesTabPageText {
             get {

@@ -1059,8 +1059,8 @@
     <value>Файл '{0}' уже защищён.</value>
   </data>
   <data name="FileAssociationBrokenWarning" xml:space="preserve">
-    <value>Нажатие два раза для открытия AxCrypt файлов , находящихся вне AxCrypt, может неправильно сработать. Операционная система ассоциации файлов для продления ".axx" кажется сломана. Свяжитесь с Вашей IT поддержкой или введите запрос на разрешение данной проблемы в поисковике в Интернете.</value>
-    <comment>A text that is shown to users starting the association with .axx file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
+    <value>Нажатие два раза для открытия AxCrypt файлов , находящихся вне AxCrypt, может неправильно сработать. Операционная система ассоциации файлов для продления ".666" кажется сломана. Свяжитесь с Вашей IT поддержкой или введите запрос на разрешение данной проблемы в поисковике в Интернете.</value>
+    <comment>A text that is shown to users starting the association with .666 file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
   </data>
   <data name="FileDoesNotExist" xml:space="preserve">
     <value>Файл '{0}' не существует.</value>
@@ -1075,7 +1075,7 @@
   </data>
   <data name="FileFilterFileTypeAxCryptIdFiles" xml:space="preserve">
     <value>Файлы AxCrypt ID</value>
-    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .axx files.</comment>
+    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .666 files.</comment>
   </data>
   <data name="FileFilterFileTypeFiles" xml:space="preserve">
     <value>Файлы</value>

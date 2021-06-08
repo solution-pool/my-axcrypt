@@ -954,7 +954,7 @@ We're sad to see you go and hope you enjoyed your time with AxCrypt!</value>
     <value>Password Required</value>
   </data>
   <data name="DialogExportAxCryptIdFileName" xml:space="preserve">
-    <value>AxCrypt ID (#{1}) - {0}.axx</value>
+    <value>AxCrypt ID (#{1}) - {0}.666</value>
   </data>
   <data name="DialogExportAxCryptIdTitle" xml:space="preserve">
     <value>Export AxCrypt ID</value>
@@ -1164,8 +1164,8 @@ We're sad to see you go and hope you enjoyed your time with AxCrypt!</value>
     <value>File '{0}' already exists.</value>
   </data>
   <data name="FileAssociationBrokenWarning" xml:space="preserve">
-    <value>Double-click to open AxCrypt files outside of AxCrypt may not function correctly. The operating system file association for extension ".axx" appears to be broken. Contact your IT support  or search for a solution on the Internet.</value>
-    <comment>A text that is shown to users starting the association with .axx file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
+    <value>Double-click to open AxCrypt files outside of AxCrypt may not function correctly. The operating system file association for extension ".666" appears to be broken. Contact your IT support  or search for a solution on the Internet.</value>
+    <comment>A text that is shown to users starting the association with .666 file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
   </data>
   <data name="FileDoesNotExist" xml:space="preserve">
     <value>File '{0}' does not exist.</value>
@@ -1179,12 +1179,12 @@ We're sad to see you go and hope you enjoyed your time with AxCrypt!</value>
     <comment>The text "All Files" when used in a file dialog.</comment>
   </data>
   <data name="FileFilterFileTypeAxCryptFiles" xml:space="preserve">
-    <value>AxCrypt Files</value>
+    <value>666encryption Files</value>
     <comment>The short description for "AxCrypt Files" used in file selection dialogs.</comment>
   </data>
   <data name="FileFilterFileTypeAxCryptIdFiles" xml:space="preserve">
     <value>AxCrypt ID Files</value>
-    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .axx files.</comment>
+    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .666 files.</comment>
   </data>
   <data name="FileFilterFileTypeFiles" xml:space="preserve">
     <value>Files</value>
@@ -2401,7 +2401,7 @@ A confirmation of your purchase will be sent to your e-mail from your payment pr
     <value>Open</value>
   </data>
   <data name="RecentFilesTabPageText" xml:space="preserve">
-    <value>Recent Files</value>
+    <value>Encrypted | Decrypted Files</value>
   </data>
   <data name="RegisterError" xml:space="preserve">
     <value>Registration failed. Please check your e-mail and try again.</value>

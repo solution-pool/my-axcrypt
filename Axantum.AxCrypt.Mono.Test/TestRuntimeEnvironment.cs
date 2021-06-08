@@ -60,7 +60,7 @@ namespace Axantum.AxCrypt.Mono.Test
             TypeMap.Register.Singleton<IReport>(() => new FakeReport());
             TypeMap.Register.New<string, IDataStore>((path) => new DataStore(path));
             TypeMap.Register.New<string, IDataContainer>((path) => new DataContainer(path));
-            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".axx"));
+            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".666"));
             TypeMap.Register.Singleton<IPortableFactory>(() => new PortableFactory());
             TypeMap.Register.Singleton<WorkFolder>(() => new WorkFolder(_workFolderPath));
             TypeMap.Register.Singleton<ILogging>(() => new Logging());
@@ -78,7 +78,7 @@ namespace Axantum.AxCrypt.Mono.Test
         [Test]
         public static void TestAxCryptExtension()
         {
-            Assert.That(OS.Current.AxCryptExtension, Is.EqualTo(".axx"), "Checking the standard AxCrypt extension.");
+            Assert.That(OS.Current.AxCryptExtension, Is.EqualTo(".666"), "Checking the standard AxCrypt extension.");
         }
 
         [Test]

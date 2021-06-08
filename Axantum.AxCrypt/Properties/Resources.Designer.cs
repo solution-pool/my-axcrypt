@@ -145,8 +145,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bulb_red_40px {
             get {
-                object obj = ResourceManager.GetObject("bulb_red_40px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                // object obj = ResourceManager.GetObject("bulb_red_40px", resourceCulture);
+                // return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         
@@ -425,8 +426,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap folder_40px {
             get {
-                object obj = ResourceManager.GetObject("folder_40px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                // object obj = ResourceManager.GetObject("folder_40px", resourceCulture);
+                // return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         
@@ -555,8 +557,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap passwords_80px {
             get {
-                object obj = ResourceManager.GetObject("passwords_80px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                //object obj = ResourceManager.GetObject("passwords_80px", resourceCulture);
+                //return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         
@@ -565,8 +568,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap passwords_grey_premium_80px {
             get {
-                object obj = ResourceManager.GetObject("passwords_grey_premium_80px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                // object obj = ResourceManager.GetObject("passwords_grey_premium_80px", resourceCulture);
+                // return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         
@@ -695,8 +699,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap share_80px {
             get {
-                object obj = ResourceManager.GetObject("share_80px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                //object obj = ResourceManager.GetObject("share_80px", resourceCulture);
+                //return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         
@@ -705,8 +710,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap share_border_80px {
             get {
-                object obj = ResourceManager.GetObject("share_border_80px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                // object obj = ResourceManager.GetObject("share_border_80px", resourceCulture);
+                // return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         
@@ -715,8 +721,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap share_border_grey_premium_80px {
             get {
-                object obj = ResourceManager.GetObject("share_border_grey_premium_80px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                // object obj = ResourceManager.GetObject("share_border_grey_premium_80px", resourceCulture);
+                // return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         
@@ -745,8 +752,9 @@ namespace Axantum.AxCrypt.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap skydrive_40px {
             get {
-                object obj = ResourceManager.GetObject("skydrive_40px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                // object obj = ResourceManager.GetObject("skydrive_40px", resourceCulture);
+                // return ((System.Drawing.Bitmap)(obj));
+                return null;
             }
         }
         

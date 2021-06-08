@@ -56,8 +56,8 @@ namespace Axantum.AxCrypt.Core.Test
         private static readonly string _rootPath = Path.GetPathRoot(Environment.CurrentDirectory);
         private static readonly string _testTextPath = Path.Combine(_rootPath, "test.txt");
         private static readonly string _davidCopperfieldTxtPath = _rootPath.PathCombine("Users", "AxCrypt", "David Copperfield.txt");
-        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.axx");
-        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Subfolder", "HelloWorld.axx");
+        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.666");
+        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Subfolder", "HelloWorld.666");
 
         private CryptoImplementation _cryptoImplementation;
 
@@ -148,7 +148,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             IDataStore sourceFileInfo = New<IDataStore>(_testTextPath);
             IDataStore destinationFileInfo = sourceFileInfo.CreateEncryptedName();
-            Assert.That(destinationFileInfo.Name, Is.EqualTo("test-txt.axx"), "Wrong encrypted file name based on the plain text file name.");
+            Assert.That(destinationFileInfo.Name, Is.EqualTo("test-txt.666"), "Wrong encrypted file name based on the plain text file name.");
             EncryptionParameters encryptionParameters = new EncryptionParameters(new V1Aes128CryptoFactory().CryptoId, new Passphrase("axcrypt"));
 
             new AxCryptFile().Encrypt(sourceFileInfo, destinationFileInfo, encryptionParameters, AxCryptOptions.EncryptWithCompression, new ProgressContext());
@@ -180,7 +180,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             IDataStore sourceFileInfo = New<IDataStore>(_testTextPath);
             IDataStore destinationFileInfo = sourceFileInfo.CreateEncryptedName();
-            Assert.That(destinationFileInfo.Name, Is.EqualTo("test-txt.axx"), "Wrong encrypted file name based on the plain text file name.");
+            Assert.That(destinationFileInfo.Name, Is.EqualTo("test-txt.666"), "Wrong encrypted file name based on the plain text file name.");
             using (Stream destinationStream = destinationFileInfo.OpenWrite())
             {
                 EncryptionParameters parameters = new EncryptionParameters(new V2Aes128CryptoFactory().CryptoId, new Passphrase("axcrypt"));
@@ -364,7 +364,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             IDataStore sourceFileInfo = New<IDataStore>(_testTextPath);
             IDataStore encryptedFileInfo = sourceFileInfo.CreateEncryptedName();
-            Assert.That(encryptedFileInfo.Name, Is.EqualTo("test-txt.axx"), "Wrong encrypted file name based on the plain text file name.");
+            Assert.That(encryptedFileInfo.Name, Is.EqualTo("test-txt.666"), "Wrong encrypted file name based on the plain text file name.");
             EncryptionParameters encryptionParameters = new EncryptionParameters(new V1Aes128CryptoFactory().CryptoId, new Passphrase("axcrypt"));
             new AxCryptFile().Encrypt(sourceFileInfo, encryptedFileInfo, encryptionParameters, AxCryptOptions.EncryptWithCompression, new ProgressContext());
 
@@ -479,7 +479,7 @@ namespace Axantum.AxCrypt.Core.Test
         [Test]
         public async Task TestEncryptToFileWithBackupWhenDestinationExistsButEncryptionIsBroken()
         {
-            string destinationFilePath = _rootPath.PathCombine("Written", "AnExistingFile.axx");
+            string destinationFilePath = _rootPath.PathCombine("Written", "AnExistingFile.666");
             IDataStore destinationFileInfo = New<IDataStore>(destinationFilePath);
             IDataStore bakFileInfo = New<IDataStore>(_rootPath.PathCombine("Written", "AnExistingFile.bak"));
             Assert.That(bakFileInfo.IsAvailable, Is.False, "The file should not exist to start with.");
@@ -492,7 +492,7 @@ namespace Axantum.AxCrypt.Core.Test
             FakeDataStore.Moved += (s, e) =>
             {
                 IDataStore fromAfterMoveActuallyTo = (IDataStore)s;
-                if (fromAfterMoveActuallyTo.FullName.EndsWith(".axx"))
+                if (fromAfterMoveActuallyTo.FullName.EndsWith(".666"))
                 {
                     using (Stream badStream = destinationFileInfo.OpenWrite())
                     {
@@ -524,7 +524,7 @@ namespace Axantum.AxCrypt.Core.Test
         public void TestMakeAxCryptFileName()
         {
             string testFile = _rootPath.PathCombine("Directory", "file.txt");
-            string axxFile = _rootPath.PathCombine("Directory", "file-txt.axx");
+            string axxFile = _rootPath.PathCombine("Directory", "file-txt.666");
             string madeName = AxCryptFile.MakeAxCryptFileName(New<IDataStore>(testFile));
             Assert.That(madeName, Is.EqualTo(axxFile), "The AxCrypt version of the name is unexpected.");
         }
@@ -549,7 +549,7 @@ namespace Axantum.AxCrypt.Core.Test
         public void TestEncryptFileWithBackupFileInfoAndWipeNullArguments()
         {
             string sourceFilePath = _davidCopperfieldTxtPath;
-            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.axx");
+            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.666");
 
             IDataStore sourceFileInfo = New<IDataStore>(sourceFilePath);
             IDataStore destinationFileInfo = New<IDataStore>(destinationFilePath);
@@ -575,7 +575,7 @@ namespace Axantum.AxCrypt.Core.Test
         public async Task TestEncryptFileWithBackupAndWipeFileInfo()
         {
             string sourceFilePath = _davidCopperfieldTxtPath;
-            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.axx");
+            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.666");
 
             IDataStore sourceFileInfo = New<IDataStore>(sourceFilePath);
             IDataStore destinationFileInfo = New<IDataStore>(destinationFilePath);
@@ -596,7 +596,7 @@ namespace Axantum.AxCrypt.Core.Test
         public void TestEncryptFileWithBackupFileNameAndWipeNullArguments()
         {
             string sourceFilePath = _davidCopperfieldTxtPath;
-            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.axx");
+            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.666");
 
             string nullFileName = null;
 
@@ -616,7 +616,7 @@ namespace Axantum.AxCrypt.Core.Test
         public async Task TestEncryptFileWithBackupAndWipeFileName()
         {
             string sourceFilePath = _davidCopperfieldTxtPath;
-            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.axx");
+            string destinationFilePath = Path.Combine(Path.GetDirectoryName(sourceFilePath), "David Copperfield-txt.666");
 
             EncryptionParameters encryptionParameters = new EncryptionParameters(new V2Aes256CryptoFactory().CryptoId, new Passphrase("b"));
             ProgressContext progress = new ProgressContext();
@@ -681,7 +681,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             IDataStore sourceFileInfo = New<IDataStore>(_davidCopperfieldTxtPath);
             sourceFileInfo.Container.CreateFolder();
-            IDataStore destinationFileInfo = New<IDataStore>(Path.Combine(Path.GetDirectoryName(_davidCopperfieldTxtPath), "David Copperfield-txt.axx"));
+            IDataStore destinationFileInfo = New<IDataStore>(Path.Combine(Path.GetDirectoryName(_davidCopperfieldTxtPath), "David Copperfield-txt.666"));
 
             EncryptionParameters encryptionParameters = new EncryptionParameters(new V1Aes128CryptoFactory().CryptoId, new Passphrase("allan"));
 
@@ -696,9 +696,9 @@ namespace Axantum.AxCrypt.Core.Test
         {
             IDataStore sourceFileInfo = New<IDataStore>(_davidCopperfieldTxtPath);
             sourceFileInfo.Container.CreateFolder();
-            sourceFileInfo.Container.CreateNewFile("David Copperfield-txt.axx");
+            sourceFileInfo.Container.CreateNewFile("David Copperfield-txt.666");
 
-            IDataStore alternateDestinationFileInfo = New<IDataStore>(Path.Combine(Path.GetDirectoryName(_davidCopperfieldTxtPath), "David Copperfield-txt.1.axx"));
+            IDataStore alternateDestinationFileInfo = New<IDataStore>(Path.Combine(Path.GetDirectoryName(_davidCopperfieldTxtPath), "David Copperfield-txt.1.666"));
 
             EncryptionParameters encryptionParameters = new EncryptionParameters(new V2Aes256CryptoFactory().CryptoId, new Passphrase("allan"));
 
@@ -714,7 +714,7 @@ namespace Axantum.AxCrypt.Core.Test
             IDataStore sourceFileInfo = New<IDataStore>(_davidCopperfieldTxtPath);
             sourceFileInfo.Container.CreateFolder();
             IDataContainer sourceFolderInfo = sourceFileInfo.Container;
-            IDataStore destinationFileInfo = sourceFileInfo.Container.FileItemInfo("David Copperfield-txt.axx");
+            IDataStore destinationFileInfo = sourceFileInfo.Container.FileItemInfo("David Copperfield-txt.666");
 
             EncryptionParameters encryptionParameters = new EncryptionParameters(new V1Aes128CryptoFactory().CryptoId, new Passphrase("allan"));
 
@@ -730,8 +730,8 @@ namespace Axantum.AxCrypt.Core.Test
             IDataStore sourceFileInfo = New<IDataStore>(_davidCopperfieldTxtPath);
             sourceFileInfo.Container.CreateFolder();
             IDataContainer sourceFolderInfo = sourceFileInfo.Container;
-            sourceFolderInfo.CreateNewFile("David Copperfield-txt.axx");
-            IDataStore alternateDestinationFileInfo = sourceFolderInfo.FileItemInfo("David Copperfield-txt.1.axx");
+            sourceFolderInfo.CreateNewFile("David Copperfield-txt.666");
+            IDataStore alternateDestinationFileInfo = sourceFolderInfo.FileItemInfo("David Copperfield-txt.1.666");
             Assert.That(alternateDestinationFileInfo.IsAvailable, Is.False, "The destination should not be created and exist yet.");
 
             EncryptionParameters encryptionParameters = new EncryptionParameters(new V2Aes128CryptoFactory().CryptoId, new Passphrase("allan"));

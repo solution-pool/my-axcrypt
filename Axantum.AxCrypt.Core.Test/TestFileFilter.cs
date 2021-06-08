@@ -31,7 +31,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             FileFilter filter = new FileFilter();
 
-            Assert.That(filter.IsEncryptable(new FakeDataStore(@"test.axx")), Is.False);
+            Assert.That(filter.IsEncryptable(new FakeDataStore(@"test.666")), Is.False);
             Assert.That(filter.IsEncryptable(new FakeDataStore(@"test.txt")), Is.True);
         }
 

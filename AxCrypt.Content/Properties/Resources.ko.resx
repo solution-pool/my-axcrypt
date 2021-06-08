@@ -992,8 +992,8 @@ AxCrypt ID 이메일 인증의 링크 클릭이 작동하지 않았습니다. (�
     <value>'{0}' 파일은 이미 존재합니다.</value>
   </data>
   <data name="FileAssociationBrokenWarning" xml:space="preserve">
-    <value>더블 클릭으로 AxCrypt  외부에서 AxCrypt 파일을 열면 제대로 작동하지 않을 수 있습니다. 확장명 ".axx" 에 대한 운영체제 파일 연결이 끊어진 것 같습니다. IT 지원 담당자에게 문의하거나 인터넷에서 해결 방법을 검색해보세요.</value>
-    <comment>A text that is shown to users starting the association with .axx file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
+    <value>더블 클릭으로 AxCrypt  외부에서 AxCrypt 파일을 열면 제대로 작동하지 않을 수 있습니다. 확장명 ".666" 에 대한 운영체제 파일 연결이 끊어진 것 같습니다. IT 지원 담당자에게 문의하거나 인터넷에서 해결 방법을 검색해보세요.</value>
+    <comment>A text that is shown to users starting the association with .666 file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
   </data>
   <data name="FileDoesNotExist" xml:space="preserve">
     <value>'{0}'파일은 없는 파일입니다.</value>
@@ -1008,7 +1008,7 @@ AxCrypt ID 이메일 인증의 링크 클릭이 작동하지 않았습니다. (�
   </data>
   <data name="FileFilterFileTypeAxCryptIdFiles" xml:space="preserve">
     <value>AxCrypt ID 파일</value>
-    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .axx files.</comment>
+    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .666 files.</comment>
   </data>
   <data name="FileFilterFileTypeFiles" xml:space="preserve">
     <value>파일</value>

@@ -66,7 +66,7 @@ namespace Axantum.AxCrypt.Core.Test
         public static void TestFailedOpen()
         {
             _fakeClient.FakeDispatcher = (command) => { return CommandStatus.Error; };
-            CommandLine cl = new CommandLine(new string[] { "file.axx" });
+            CommandLine cl = new CommandLine(new string[] { "file.666" });
             cl.Execute();
 
             Assert.That(FakeRuntimeEnvironment.Instance.ExitCode, Is.EqualTo(1), "An error during Open shall return status code 1.");

@@ -47,8 +47,8 @@ namespace Axantum.AxCrypt.Core.Test
         private static readonly string _rootPath = Path.GetPathRoot(Environment.CurrentDirectory);
         private static readonly string _testTextPath = Path.Combine(_rootPath, "test.txt");
         private static readonly string _davidCopperfieldTxtPath = _rootPath.PathCombine("Users", "AxCrypt", "David Copperfield.txt");
-        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.axx");
-        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "HelloWorld.axx");
+        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.666");
+        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "HelloWorld.666");
 
         [SetUp]
         public static void Setup()
@@ -90,9 +90,9 @@ namespace Axantum.AxCrypt.Core.Test
         public static void TestActiveFileCollectionEnumerationConstructor()
         {
             IDataStore decryptedFileInfo1 = New<IDataStore>(Path.Combine(_rootPath, "test1.txt"));
-            IDataStore encryptedFileInfo1 = New<IDataStore>(Path.Combine(_rootPath, "test1-txt.axx"));
+            IDataStore encryptedFileInfo1 = New<IDataStore>(Path.Combine(_rootPath, "test1-txt.666"));
             IDataStore decryptedFileInfo2 = New<IDataStore>(Path.Combine(_rootPath, "test2.txt"));
-            IDataStore encryptedFileInfo2 = New<IDataStore>(Path.Combine(_rootPath, "test2-text.axx"));
+            IDataStore encryptedFileInfo2 = New<IDataStore>(Path.Combine(_rootPath, "test2-text.666"));
             ActiveFile activeFile1 = new ActiveFile(encryptedFileInfo1, decryptedFileInfo1, new LogOnIdentity("newA"), ActiveFileStatus.None, new V1Aes128CryptoFactory().CryptoId);
             ActiveFile activeFile2 = new ActiveFile(encryptedFileInfo2, decryptedFileInfo2, new LogOnIdentity("newB"), ActiveFileStatus.None, new V1Aes128CryptoFactory().CryptoId);
 

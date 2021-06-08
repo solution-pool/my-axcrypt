@@ -61,7 +61,7 @@ namespace Axantum.AxCrypt.Core.Crypto
 
         public string Name
         {
-            get { return "AES-256"; }
+            get { return "666encryption"; }
         }
 
         public int KeySize

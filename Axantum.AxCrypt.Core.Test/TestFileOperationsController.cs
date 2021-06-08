@@ -54,8 +54,8 @@ namespace Axantum.AxCrypt.Core.Test
     {
         private static readonly string _rootPath = Path.GetPathRoot(Environment.CurrentDirectory);
         private static readonly string _davidCopperfieldTxtPath = _rootPath.PathCombine("Users", "AxCrypt", "David Copperfield.txt");
-        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.axx");
-        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "HelloWorld.axx");
+        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.666");
+        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "HelloWorld.666");
 
         private CryptoImplementation _cryptoImplementation;
 
@@ -194,7 +194,7 @@ namespace Axantum.AxCrypt.Core.Test
             };
             controller.QuerySaveFileAs += (object sender, FileOperationEventArgs e) =>
             {
-                e.SaveFileFullName = Path.Combine(Path.GetDirectoryName(e.SaveFileFullName), "alternative-name.axx");
+                e.SaveFileFullName = Path.Combine(Path.GetDirectoryName(e.SaveFileFullName), "alternative-name.666");
             };
             Guid cryptoId = Guid.Empty;
             controller.Completed += (object sender, FileOperationEventArgs e) =>
@@ -207,7 +207,7 @@ namespace Axantum.AxCrypt.Core.Test
             FileOperationContext status = await controller.EncryptFileAsync(New<IDataStore>(_davidCopperfieldTxtPath));
             Assert.That(status.ErrorStatus, Is.EqualTo(ErrorStatus.Success), "The status should indicate success.");
 
-            Assert.That(Path.GetFileName(destinationPath), Is.EqualTo("alternative-name.axx"), "The alternative name should be used, since the default existed.");
+            Assert.That(Path.GetFileName(destinationPath), Is.EqualTo("alternative-name.666"), "The alternative name should be used, since the default existed.");
             IDataStore destinationInfo = New<IDataStore>(destinationPath);
             Assert.That(destinationInfo.IsAvailable, "After encryption the destination file should be created.");
 

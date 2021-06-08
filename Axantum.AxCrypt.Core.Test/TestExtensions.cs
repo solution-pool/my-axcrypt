@@ -289,7 +289,7 @@ namespace Axantum.AxCrypt.Core.Test
             string rootPath = Path.GetPathRoot(Environment.CurrentDirectory);
             string fileName = rootPath.PathCombine("Users", "Axantum", "A Documents Folder", "My Document.docx");
             string encryptedFileName = New<IDataStore>(fileName).CreateEncryptedName().FullName;
-            Assert.That(encryptedFileName, Is.EqualTo(rootPath.PathCombine("Users", "Axantum", "A Documents Folder", "My Document-docx.axx")), "Standard conversion of file name to encrypted form.");
+            Assert.That(encryptedFileName, Is.EqualTo(rootPath.PathCombine("Users", "Axantum", "A Documents Folder", "My Document-docx.666")), "Standard conversion of file name to encrypted form.");
 
             Assert.Throws<InternalErrorException>(() =>
                  {
@@ -301,7 +301,7 @@ namespace Axantum.AxCrypt.Core.Test
 
             fileName = rootPath.PathCombine("Users", "Axantum", "A Documents Folder", "My Extensionless File");
             encryptedFileName = New<IDataStore>(fileName).CreateEncryptedName().FullName;
-            Assert.That(encryptedFileName, Is.EqualTo(rootPath.PathCombine("Users", "Axantum", "A Documents Folder", "My Extensionless File.axx")), "Conversion of file name without extension to encrypted form.");
+            Assert.That(encryptedFileName, Is.EqualTo(rootPath.PathCombine("Users", "Axantum", "A Documents Folder", "My Extensionless File.666")), "Conversion of file name without extension to encrypted form.");
 
             Assert.Throws<InternalErrorException>(() =>
             {
@@ -425,7 +425,7 @@ namespace Axantum.AxCrypt.Core.Test
 
             Assert.That(New<FileFilter>().IsEncryptable(New<IDataStore>(@"C:\Temp\test.txt")), Is.True);
             Assert.That(New<FileFilter>().IsEncryptable(New<IDataStore>(@"C:\Windows\test.txt")), Is.False);
-            Assert.That(New<FileFilter>().IsEncryptable(New<IDataStore>(@"C:\Temp\test-txt.axx")), Is.False);
+            Assert.That(New<FileFilter>().IsEncryptable(New<IDataStore>(@"C:\Temp\test-txt.666")), Is.False);
 
             IDataStore nullFileInfo = null;
             Assert.Throws<ArgumentNullException>(() => New<FileFilter>().IsEncryptable(nullFileInfo));
@@ -469,8 +469,8 @@ namespace Axantum.AxCrypt.Core.Test
             IDataStore fileInfo = New<IDataStore>(@"c:\test.txt");
             Assert.That(fileInfo.Type(), Is.EqualTo(FileInfoTypes.EncryptableFile));
 
-            FakeDataStore.AddFile(@"c:\test-txt.axx", null);
-            fileInfo = New<IDataStore>(@"c:\test-txt.axx");
+            FakeDataStore.AddFile(@"c:\test-txt.666", null);
+            fileInfo = New<IDataStore>(@"c:\test-txt.666");
             Assert.That(fileInfo.Type(), Is.EqualTo(FileInfoTypes.EncryptedFile));
 
             FakeDataStore.AddFolder(@"c:\test\");

@@ -1051,8 +1051,8 @@ il servizio personale diretto e il supporto sono in inglese.</value>
     <value>Il file '{0}' esiste già.</value>
   </data>
   <data name="FileAssociationBrokenWarning" xml:space="preserve">
-    <value>Fare doppio click per aprire i file di AxCrypt al di fuori di AxCrypt potrebbe non funzionare correttamente. L'associazione dei file del sistema operativo per l'estensione ".axx" sembra essere corrotta. Contatta il tuo supporto IT o cerca una soluzione su Internet.</value>
-    <comment>A text that is shown to users starting the association with .axx file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
+    <value>Fare doppio click per aprire i file di AxCrypt al di fuori di AxCrypt potrebbe non funzionare correttamente. L'associazione dei file del sistema operativo per l'estensione ".666" sembra essere corrotta. Contatta il tuo supporto IT o cerca una soluzione su Internet.</value>
+    <comment>A text that is shown to users starting the association with .666 file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
   </data>
   <data name="FileDoesNotExist" xml:space="preserve">
     <value>Il file '{0}' non esiste.</value>
@@ -1067,7 +1067,7 @@ il servizio personale diretto e il supporto sono in inglese.</value>
   </data>
   <data name="FileFilterFileTypeAxCryptIdFiles" xml:space="preserve">
     <value>File AxCrypt ID</value>
-    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .axx files.</comment>
+    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .666 files.</comment>
   </data>
   <data name="FileFilterFileTypeFiles" xml:space="preserve">
     <value>File</value>

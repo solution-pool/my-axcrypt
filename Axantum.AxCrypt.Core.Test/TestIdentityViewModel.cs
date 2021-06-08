@@ -183,7 +183,7 @@ namespace Axantum.AxCrypt.Core.Test
                 return Task.FromResult<object>(null);
             };
 
-            await ivm.AskForDecryptPassphrase.ExecuteAsync(@"C:\Folder\File1-txt.axx");
+            await ivm.AskForDecryptPassphrase.ExecuteAsync(@"C:\Folder\File1-txt.666");
 
             Assert.That(ivm.LogOnIdentity.Passphrase.Text, Is.EqualTo("p"));
             Assert.That(id.Passphrase.Thumbprint, Is.EqualTo(Passphrase.Empty.Thumbprint));
@@ -194,7 +194,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             LogOnIdentity key = new LogOnIdentity("p");
 
-            ActiveFile activeFile = new ActiveFile(New<IDataStore>(@"C:\Folder\File1-txt.axx"), New<IDataStore>(@"C:\Folder\File1.txt"), key, ActiveFileStatus.NotDecrypted, new V1Aes128CryptoFactory().CryptoId);
+            ActiveFile activeFile = new ActiveFile(New<IDataStore>(@"C:\Folder\File1-txt.666"), New<IDataStore>(@"C:\Folder\File1.txt"), key, ActiveFileStatus.NotDecrypted, new V1Aes128CryptoFactory().CryptoId);
             Resolve.FileSystemState.Add(activeFile);
 
             LogOnIdentity id = null;
@@ -206,7 +206,7 @@ namespace Axantum.AxCrypt.Core.Test
                 return Task.FromResult<object>(null);
             };
 
-            await ivm.AskForDecryptPassphrase.ExecuteAsync(@"C:\Folder\File1-txt.axx");
+            await ivm.AskForDecryptPassphrase.ExecuteAsync(@"C:\Folder\File1-txt.666");
 
             Assert.That(ivm.LogOnIdentity.Passphrase.Text, Is.EqualTo("p"));
             Assert.That(id.Passphrase.Thumbprint, Is.EqualTo(Passphrase.Empty.Thumbprint));
@@ -217,7 +217,7 @@ namespace Axantum.AxCrypt.Core.Test
         {
             LogOnIdentity key = new LogOnIdentity("p");
 
-            ActiveFile activeFile = new ActiveFile(New<IDataStore>(@"C:\Folder\File1-txt.axx"), New<IDataStore>(@"C:\Folder\File1.txt"), key, ActiveFileStatus.NotDecrypted, new V1Aes128CryptoFactory().CryptoId);
+            ActiveFile activeFile = new ActiveFile(New<IDataStore>(@"C:\Folder\File1-txt.666"), New<IDataStore>(@"C:\Folder\File1.txt"), key, ActiveFileStatus.NotDecrypted, new V1Aes128CryptoFactory().CryptoId);
             Resolve.FileSystemState.Add(activeFile);
 
             LogOnIdentity id = key;
@@ -230,7 +230,7 @@ namespace Axantum.AxCrypt.Core.Test
                 return Task.FromResult<object>(null);
             };
 
-            await ivm.AskForDecryptPassphrase.ExecuteAsync(@"C:\Folder\File1-txt.axx");
+            await ivm.AskForDecryptPassphrase.ExecuteAsync(@"C:\Folder\File1-txt.666");
 
             Assert.That(ivm.LogOnIdentity.Passphrase.Text, Is.EqualTo("p"));
         }

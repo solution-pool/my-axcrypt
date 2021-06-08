@@ -56,8 +56,8 @@ namespace Axantum.AxCrypt.Core.Test
         private static readonly string _rootPath = Path.GetPathRoot(Environment.CurrentDirectory);
         private static readonly string _testTextPath = Path.Combine(_rootPath, "test.txt");
         private static readonly string _davidCopperfieldTxtPath = _rootPath.PathCombine("Users", "AxCrypt", "David Copperfield.txt");
-        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.axx");
-        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "HelloWorld.axx");
+        private static readonly string _uncompressedAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Uncompressed.666");
+        private static readonly string _helloWorldAxxPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "HelloWorld.666");
 
         private CryptoImplementation _cryptoImplementation;
 
@@ -177,7 +177,7 @@ namespace Axantum.AxCrypt.Core.Test
             IEnumerable<LogOnIdentity> keys = new LogOnIdentity[] { new LogOnIdentity("a") };
             FileOperation fileOperation = new FileOperation(Resolve.FileSystemState, new SessionNotify());
 
-            IDataStore dataStore = New<IDataStore>(_rootPath.PathCombine("Documents", "HelloWorld-NotThere.axx"));
+            IDataStore dataStore = New<IDataStore>(_rootPath.PathCombine("Documents", "HelloWorld-NotThere.666"));
             FileOperationContext status = await fileOperation.OpenAndLaunchApplication(keys, dataStore, new ProgressContext());
             Assert.That(status.ErrorStatus, Is.EqualTo(ErrorStatus.FileDoesNotExist), "The launch should fail with status FileDoesNotExist.");
         }

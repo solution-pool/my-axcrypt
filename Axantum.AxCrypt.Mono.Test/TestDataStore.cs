@@ -56,7 +56,7 @@ namespace Axantum.AxCrypt.Mono.Test
             TypeMap.Register.Singleton<INow>(() => new FakeNow());
             TypeMap.Register.Singleton<IReport>(() => new FakeReport());
             TypeMap.Register.New<string, IDataStore>((path) => new DataStore(path));
-            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".axx"));
+            TypeMap.Register.Singleton<IRuntimeEnvironment>(() => new RuntimeEnvironment(".666"));
             TypeMap.Register.Singleton<IPlatform>(() => new MonoPlatform());
             TypeMap.Register.Singleton<IPortableFactory>(() => new PortableFactory());
             TypeMap.Register.Singleton<WorkFolder>(() => new WorkFolder(_tempPath));
@@ -173,7 +173,7 @@ namespace Axantum.AxCrypt.Mono.Test
 
             IDataStore notEncryptedDataStore = new DataStore("file.txt");
             IDataStore encryptedDataStore = notEncryptedDataStore.CreateEncryptedName();
-            Assert.That(encryptedDataStore.Name, Is.EqualTo("file-txt.axx"), "The encrypted name should be as expected.");
+            Assert.That(encryptedDataStore.Name, Is.EqualTo("file-txt.666"), "The encrypted name should be as expected.");
         }
     }
 }

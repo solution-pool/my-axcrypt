@@ -51,11 +51,11 @@ namespace Axantum.AxCrypt.Core.Test
     public class TestFileSystemState
     {
         private static readonly string _rootPath = Path.GetPathRoot(Environment.CurrentDirectory);
-        private static readonly string _encryptedAxxPath = Path.Combine(_rootPath, "Encrypted-txt.axx");
-        private static readonly string _encrypted1AxxPath = Path.Combine(_rootPath, "Encrypted1-txt.axx");
-        private static readonly string _encrypted2AxxPath = Path.Combine(_rootPath, "Encrypted2-txt.axx");
-        private static readonly string _encrypted3AxxPath = Path.Combine(_rootPath, "Encrypted3-txt.axx");
-        private static readonly string _encrypted4AxxPath = Path.Combine(_rootPath, "Encrypted4-txt.axx");
+        private static readonly string _encryptedAxxPath = Path.Combine(_rootPath, "Encrypted-txt.666");
+        private static readonly string _encrypted1AxxPath = Path.Combine(_rootPath, "Encrypted1-txt.666");
+        private static readonly string _encrypted2AxxPath = Path.Combine(_rootPath, "Encrypted2-txt.666");
+        private static readonly string _encrypted3AxxPath = Path.Combine(_rootPath, "Encrypted3-txt.666");
+        private static readonly string _encrypted4AxxPath = Path.Combine(_rootPath, "Encrypted4-txt.666");
         private static readonly string _decryptedTxtPath = Path.Combine(_rootPath, "Decrypted.txt");
         private static readonly string _decrypted1TxtPath = Path.Combine(_rootPath, "Decrypted1.txt");
         private static readonly string _decrypted2TxtPath = Path.Combine(_rootPath, "Decrypted2.txt");

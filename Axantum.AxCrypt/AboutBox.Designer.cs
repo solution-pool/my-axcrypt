@@ -57,7 +57,7 @@
             this.ProductNameText.Name = "ProductNameText";
             this.ProductNameText.Size = new System.Drawing.Size(271, 17);
             this.ProductNameText.TabIndex = 27;
-            this.ProductNameText.Text = "[AxCrypt File Encryption]";
+            this.ProductNameText.Text = "[666 File Encryption]";
             this.ProductNameText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // VersionText

@@ -41,7 +41,7 @@ namespace Axantum.AxCrypt.Fake
 
         public FakeRuntimeEnvironment()
         {
-            AxCryptExtension = ".axx";
+            AxCryptExtension = ".666";
             Platform = Platform.WindowsDesktop;
             CurrentTiming = new FakeTiming();
             EnvironmentVariables = new Dictionary<string, string>();

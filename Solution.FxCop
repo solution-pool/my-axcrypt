@@ -29,7 +29,7 @@
   <Target Name="$(ProjectDir)/Axantum.AxCrypt.Mono.Test/bin/Debug/Axantum.AxCrypt.Mono.Test.dll" Analyze="True" AnalyzeAllChildren="True" />
   <Target Name="$(ProjectDir)/Axantum.AxCrypt.Mono/bin/Debug/Axantum.AxCrypt.Mono.dll" Analyze="True" AnalyzeAllChildren="True" />
   <Target Name="$(ProjectDir)/Axantum.AxCrypt/bin/Debug/Axantum.AxCrypt.Core.dll" Analyze="True" AnalyzeAllChildren="True" />
-  <Target Name="$(ProjectDir)/Axantum.AxCrypt/bin/Debug/Axantum.AxCrypt.exe" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/Axantum.AxCrypt/bin/Debug/666encryption.exe" Analyze="True" AnalyzeAllChildren="True" />
  </Targets>
  <Rules>
   <RuleFiles>

@@ -1031,8 +1031,8 @@ We vinden het jammer dat u ons verlaat en hopen dat u genoten heeft van uw tijd 
     <value>Bestand '{0}' bestaat al </value>
   </data>
   <data name="FileAssociationBrokenWarning" xml:space="preserve">
-    <value>Dubbelklik om AxCrypt bestanden buiten AxCrypt te openen werkt mogelijk niet correct. De bestandsassociatie voor bestandsextensie ".axx" van het besturingssysteem lijkt gebroken te zijn. Contact uw IT support, of zoek voor een oplossing op het internet.</value>
-    <comment>A text that is shown to users starting the association with .axx file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
+    <value>Dubbelklik om AxCrypt bestanden buiten AxCrypt te openen werkt mogelijk niet correct. De bestandsassociatie voor bestandsextensie ".666" van het besturingssysteem lijkt gebroken te zijn. Contact uw IT support, of zoek voor een oplossing op het internet.</value>
+    <comment>A text that is shown to users starting the association with .666 file is broken. It should not mention "Windows", or "Mac" etc so it can be used in all environments.</comment>
   </data>
   <data name="FileDoesNotExist" xml:space="preserve">
     <value>Bestand '{0}' bestaat niet.</value>
@@ -1047,7 +1047,7 @@ We vinden het jammer dat u ons verlaat en hopen dat u genoten heeft van uw tijd 
   </data>
   <data name="FileFilterFileTypeAxCryptIdFiles" xml:space="preserve">
     <value>AxCrypt ID Bestanden</value>
-    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .axx files.</comment>
+    <comment>The description for AxCrypt ID files when exporting. Essentially a type of .666 files.</comment>
   </data>
   <data name="FileFilterFileTypeFiles" xml:space="preserve">
     <value>Bestanden</value>

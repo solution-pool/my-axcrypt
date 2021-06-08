@@ -56,7 +56,7 @@ namespace Axantum.AxCrypt.Core.Test
         private static readonly string _pathRoot = Path.GetPathRoot(Environment.CurrentDirectory);
         private static readonly string _documentsFolder = _pathRoot.PathCombine("Documents");
         private static readonly string _decryptedFile1 = _documentsFolder.PathCombine("test.txt");
-        private static readonly string _anAxxPath = _documentsFolder.PathCombine("Uncompressed.axx");
+        private static readonly string _anAxxPath = _documentsFolder.PathCombine("Uncompressed.666");
         private static readonly string _fileSystemStateFilePath = Path.Combine(Path.GetTempPath(), "DummyFileSystemState.txt");
 
         private CryptoImplementation _cryptoImplementation;
