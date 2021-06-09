@@ -134,7 +134,7 @@ namespace Axantum.AxCrypt.Core.Algorithm
         {
             get
             {
-                return Stream.Position;
+                return Stream.Position; 
             }
             set
             {

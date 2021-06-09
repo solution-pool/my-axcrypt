@@ -320,7 +320,7 @@ You have been warned, now enjoy!</value>
     <comment>A text that is shown to users starting a beta version of our software.</comment>
   </data>
   <data name="AxCryptFileEncryption" xml:space="preserve">
-    <value>AxCrypt File Security</value>
+    <value>666encryption File Security</value>
   </data>
   <data name="BadEmail" xml:space="preserve">
     <value>Incorrect email address</value>
@@ -2784,8 +2784,8 @@ To go to the start page, click &lt;a href="{1}"&gt;here&lt;/a&gt;.</value>
     <value>Transaction history</value>
   </data>
   <data name="TrayBalloonTooltip" xml:space="preserve">
-    <value>Click to restore the AxCrypt application window.</value>
-    <comment>Previous text: Double-click to restore the AxCrypt application window.</comment>
+    <value>Click to restore the 666encryption application window.</value>
+    <comment>Previous text: Double-click to restore the 666encryption application window.</comment>
   </data>
   <data name="TrialPremiumStartInfo" xml:space="preserve">
     <value>Great! We've enabled a free trial of Premium for you. Now you can use all features of AxCrypt for free during the trial period.

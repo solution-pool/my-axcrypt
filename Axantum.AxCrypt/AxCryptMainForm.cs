@@ -1538,7 +1538,7 @@ namespace Axantum.AxCrypt
             int i = _mainToolStrip.Items.IndexOf(GetKnownFoldersToolItems().First()) + 1;
             foreach (KnownFolder knownFolder in folders)
             {
-                ToolStripButton button = new ToolStripButton((Image)knownFolder.Image);
+                /*ToolStripButton button = new ToolStripButton((Image)knownFolder.Image);
                 button.ImageScaling = ToolStripItemImageScaling.SizeToFit;
                 button.Size = new Size(40, 40);
                 button.Margin = new Padding(0);
@@ -1554,7 +1554,7 @@ namespace Axantum.AxCrypt
                 };
                 button.Enabled = knownFolder.Enabled;
                 _mainToolStrip.Items.Insert(i, button);
-                ++i;
+                ++i;*/
             }
         }
 
@@ -2180,6 +2180,11 @@ namespace Axantum.AxCrypt
                     return;
                 }
             }
+        }
+
+        private void _softwareStatusButton_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

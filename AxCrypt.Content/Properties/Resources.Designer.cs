@@ -580,7 +580,7 @@ namespace AxCrypt.Content.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AxCrypt File Security.
+        ///   Looks up a localized string similar to 666encryption File Security.
         /// </summary>
         public static string AxCryptFileEncryption {
             get {
@@ -6997,7 +6997,7 @@ namespace AxCrypt.Content.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Click to restore the AxCrypt application window..
+        ///   Looks up a localized string similar to Click to restore the 666encryption application window..
         /// </summary>
         public static string TrayBalloonTooltip {
             get {

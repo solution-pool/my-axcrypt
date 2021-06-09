@@ -2404,7 +2404,7 @@ Um zur Startseite zu gehen, klicken Sie &lt;a href="{1}"&gt;hier&lt;/a&gt;</valu
   </data>
   <data name="TrayBalloonTooltip" xml:space="preserve">
     <value>Klicken um das AxCrypt Anwendungsfenster wiederherzustellen. </value>
-    <comment>Previous text: Double-click to restore the AxCrypt application window.</comment>
+    <comment>Previous text: Double-click to restore the 666encryption application window.</comment>
   </data>
   <data name="TrialPremiumStartInfo" xml:space="preserve">
     <value>Sehr gut! Jetzt können Sie während der Probezeit kostenlos alle Funktionen von AxCrypt nutzen. 
